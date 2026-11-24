@@ -1,11 +1,11 @@
 import styles from "../../styles/home.module.css"
 import Movie from "../../components/movie";
+import { API_URL } from "../constants";
 
 export const metadata = {
   title: "HOME",
 };
 
-export const API_URL = "https://nomad-movies-2.nomadcoders.workers.dev/movies"
 
 async function getMovies(){
   // await new Promise((resolve)=>setTimeout(resolve, 1000))
