@@ -11,7 +11,6 @@ export default async function MovieDetail({
   // promise 사용 시 병렬로 데이터를 fetch하지만, 두개가 완료되어야 render => suspense 병렬시작 각각 render
   return (
   <div>
-    <div>Movie Detail Page</div>
     <Suspense fallback={<h1>Loading movie info</h1>}>
       <MovieInfo id={id}/>
     </Suspense>
